@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <!-- 用户 2026-10-24 令：「删除预测性返回手势，谁让你弄这个垃圾功能的」⇒ 主动退出 predictive back。
+         targetSdk 37 默认是开的（API 34+ 默认启用）；设 false 后系统走 legacy 返回派发，
+         不再有"跟手回退预览"，返回键 / 边缘手势仍然正常 pop（装包后必须在真机上验一遍返回链路）。 -->
+    <application
+        android:name=".AlbumApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Album">
+
+        <!-- 锁竖屏（用户 2026-10-24 拍板）：横竖屏适配在 §4「明确不做」里，不锁的话转屏后
+             banner（短边×0.5625）与网格（列数 1–7 只按宽度算）会按竖屏逻辑铺出来，画面不对。
+             注意：targetSdk 36+ 在 sw≥600dp 的大屏上系统会忽略本限制（Android 16 的自适应布局策略）。 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity,DiscouragedApi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

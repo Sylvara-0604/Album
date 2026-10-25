@@ -1,0 +1,38 @@
+Album
+Copyright 2026 Sylvara-0604
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+--------------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------------
+
+Embedded asset
+  App icon glyph: "image" from Google Material Design Icons
+    https://github.com/google/material-design-icons
+    Licensed under the Apache License, Version 2.0.
+    Transform applied: THIRD_PARTY_NOTICES.md
+    Upstream licence text: docs/third-party/material-design-icons-LICENSE.txt
+
+Build dependencies (resolved from Google Maven and Maven Central at build time;
+no third-party binaries are vendored into this repository)
+  AndroidX / Jetpack, Kotlin standard library, kotlinx.coroutines,
+  Compose Material 3, Media3 — all licensed under the Apache License, Version 2.0.
+
+Provenance
+  The interaction and motion design of this gallery is modelled on the behaviour of
+  Sony's "Album" application (versions 6.0 / 7.0 / 8.0 / 9.9) as observed on-device.
+  No Sony source code, resource, icon, font or asset was copied into this project;
+  the implementation is an independent rewrite in Kotlin + Jetpack Compose.
+  This project is not affiliated with, endorsed by, or sponsored by Sony.
+--------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose 首帧之前的窗口底色（深色由 values-night 覆盖） -->
+    <color name="window_background">#FFFBFE</color>
+    <color name="ic_launcher_background">#FF243447</color>
+</resources>

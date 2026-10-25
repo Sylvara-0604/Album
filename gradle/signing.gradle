@@ -1,0 +1,27 @@
+// Public-repo signing hook (Groovy on purpose: an external .gradle.kts script cannot see AGP DSL types).
+//
+// `unified` is defined only when `keystore.properties` exists at the repository root, so a plain
+// clone still builds (unsigned release APK). keystore.properties format:
+//
+//     storeFile=/absolute/path/to/your.jks
+//     storePassword=***
+//     keyAlias=***
+//     keyPassword=***
+//
+// It is listed in .gitignore -- never commit a keystore.
+
+def keystoreProps = project.rootProject.file('keystore.properties')
+if (keystoreProps.exists()) {
+    def props = new Properties()
+    keystoreProps.withInputStream { props.load(it) }
+    android {
+        signingConfigs {
+            unified {
+                storeFile project.rootProject.file(props.getProperty('storeFile'))
+                storePassword props.getProperty('storePassword')
+                keyAlias props.getProperty('keyAlias')
+                keyPassword props.getProperty('keyPassword')
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues/>
+  <CurrentIssues>
+    <ID>ComplexCondition:Banner.kt:imageWidth &lt;= 0 || imageHeight &lt;= 0 || dstWidth &lt;= 0f || dstHeight &lt;= 0f</ID>
+    <ID>ComplexCondition:FolderListScreen.kt:!iw.isFinite() || !ih.isFinite() || iw &lt;= 0f || ih &lt;= 0f || size.width &lt;= 0f || size.height &lt;= 0f</ID>
+    <ID>CyclomaticComplexMethod:GridPinch.kt:fun Modifier.pinchToColumns: Modifier</ID>
+    <ID>CyclomaticComplexMethod:MediaGrid.kt:@Composable fun MediaGrid</ID>
+    <ID>LongMethod:AlbumNav.kt:@Composable fun AlbumApp</ID>
+    <ID>LongMethod:FolderListScreen.kt:@Composable private fun FolderRow</ID>
+    <ID>LongMethod:MediaGrid.kt:@Composable @OptIn(ExperimentalFoundationApi::class) private fun MediaCell</ID>
+    <ID>LongMethod:MediaGrid.kt:@Composable fun MediaGrid</ID>
+    <ID>LongMethod:SettingsScreen.kt:@Composable fun SettingsScreen</ID>
+    <ID>LongMethod:VideoPage.kt:@androidx.annotation.OptIn(UnstableApi::class) @Composable fun VideoPage</ID>
+    <ID>LongMethod:ViewerScreen.kt:@Composable fun ViewerScreen</ID>
+    <ID>LoopWithTooManyJumpStatements:FractionalGrid.kt:GridMeasurePolicy$for</ID>
+    <ID>LoopWithTooManyJumpStatements:FractionalGrid.kt:GridModel$for</ID>
+    <ID>LoopWithTooManyJumpStatements:MediaGrid.kt:for</ID>
+    <ID>LoopWithTooManyJumpStatements:MediaStoreSource.kt:MediaStoreSource$do</ID>
+    <ID>SwallowedException:CropViewModel.kt:CropViewModel$decodeFailed: IOException</ID>
+    <ID>SwallowedException:CropViewModel.kt:CropViewModel$denied: SecurityException</ID>
+    <ID>SwallowedException:CropViewModel.kt:CropViewModel$failure: Exception</ID>
+    <ID>ThrowsCount:CropSaver.kt:CropSaver$private fun writeItem: Uri</ID>
+    <ID>TooManyFunctions:CropViewModel.kt:CropViewModel : AndroidViewModel</ID>
+    <ID>TooManyFunctions:FractionalGrid.kt:FractionalGridState : ScrollableState</ID>
+    <ID>TooManyFunctions:MediaStoreSource.kt:MediaStoreSource</ID>
+    <ID>TooManyFunctions:TimelineViewModel.kt:TimelineViewModel : ViewModel</ID>
+    <ID>UnusedParameter:ViewerScreen.kt:seedAspect: Float = 0f</ID>
+  </CurrentIssues>
+</SmellBaseline>

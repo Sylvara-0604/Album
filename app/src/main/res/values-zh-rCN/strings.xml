@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">相册</string>
+
+    <string name="permission_title">需要照片访问权限</string>
+    <string name="permission_body">相册只显示本机已有的照片和视频，不会上传任何内容。</string>
+    <string name="permission_grant">允许访问</string>
+    <string name="action_open_settings">打开设置</string>
+    <string name="action_select_more">选择更多</string>
+
+    <string name="empty_title">还没有照片</string>
+    <string name="empty_body">拍摄的照片和视频会显示在这里。</string>
+    <string name="grid_load_failed">读取本机照片失败</string>
+    <string name="action_retry">重试</string>
+    <string name="action_cancel">取消</string>
+    <string name="viewer_action_crop">裁剪</string>
+    <string name="viewer_action_details">详情</string>
+    <string name="capsule_folders">文件夹</string>
+    <string name="capsule_settings">设置</string>
+    <string name="capsule_exit_selection">退出多选</string>
+    <string name="settings_title">设置</string>
+
+    <string name="settings_theme_section">外观</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+
+    <string name="settings_banner_section">Banner</string>
+    <string name="settings_banner_interval_row">换图间隔</string>
+    <string name="settings_banner_interval_default">默认（5 秒 / 15 秒）</string>
+    <string name="settings_banner_interval_5s">5 秒</string>
+    <string name="settings_banner_interval_10s">10 秒</string>
+    <string name="settings_banner_interval_60s">1 分钟</string>
+
+    <string name="settings_motion_section">动效</string>
+    <string name="settings_page_switch_row">换页节拍</string>
+    <string name="settings_page_switch_soft">柔和衔接（240 毫秒，当前）</string>
+    <string name="settings_page_switch_serial">严格串行（300 毫秒，同 9.9）</string>
+    <string name="settings_page_switch_fast">更快（220 毫秒）</string>
+    <string name="settings_viewer_close_row">查看页关闭方式</string>
+    <string name="settings_viewer_close_wipe">网格整幅盖上（当前）</string>
+    <string name="settings_viewer_close_slide">查看页原路滑出</string>
+
+    <string name="settings_storage_section">存储</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_cache_cleared">缓存已清除</string>
+
+    <string name="settings_about_section">关于</string>
+    <string name="settings_about">关于本应用</string>
+    <string name="about_version">版本 %1$s</string>
+    <string name="about_body">用 Jetpack Compose 重写的 Sony 相册体验。</string>
+    <string name="about_tech_title">技术栈</string>
+    <string name="about_tech_body">Kotlin · Jetpack Compose · Navigation 3 · Paging 3 · Coil 3 · Media3</string>
+    <string name="about_thanks_title">致谢</string>
+    <string name="about_thanks_body">感谢 Sony 相册提供的设计参考，以及 AndroidX、Coil、Media3 社区。</string>
+
+    <plurals name="folder_item_count">
+        <item quantity="other">%1$d 个项目</item>
+    </plurals>
+    <string name="folder_root">根目录</string>
+    <string name="viewer_video_loading">加载中</string>
+    <string name="viewer_video_time">%1$s / %2$s</string>
+    <string name="viewer_details_size">尺寸</string>
+    <string name="viewer_details_taken">拍摄时间</string>
+    <string name="viewer_details_file_size">文件大小</string>
+    <string name="viewer_details_path">路径</string>
+    <string name="viewer_details_date_pattern">yyyy-MM-dd HH:mm</string>
+    <string name="viewer_details_size_b">%1$s B</string>
+    <string name="viewer_details_size_kb">%1$s KB</string>
+    <string name="viewer_details_size_mb">%1$s MB</string>
+    <string name="crop_title">裁剪</string>
+    <string name="crop_cancel">取消</string>
+    <string name="crop_save">保存</string>
+    <string name="crop_saving">正在保存…</string>
+    <string name="crop_save_choice_title">保存方式</string>
+    <string name="crop_save_copy">另存为副本</string>
+    <string name="crop_save_overwrite">覆盖原图</string>
+    <string name="crop_error_title">保存失败</string>
+    <string name="crop_error_dismiss">确定</string>
+    <string name="crop_error_decode">无法读取这张图片</string>
+    <string name="crop_error_denied">没有写入权限</string>
+    <string name="crop_error_save">保存失败，请重试</string>
+    <string name="banner_caption_today">今天</string>
+    <plurals name="selection_count">
+        <item quantity="other">已选 %1$d 项</item>
+    </plurals>
+    <string name="selection_new_folder">新建文件夹</string>
+    <string name="selection_share">分享</string>
+    <string name="selection_delete">删除</string>
+    <string name="selection_delete_failed">没有删除任何项目</string>
+    <string name="action_ok">确定</string>
+    <string name="folder_new_title">新建文件夹</string>
+    <string name="folder_new_hint">文件夹名称</string>
+    <string name="folder_new_failed">没能创建文件夹</string>
+    <string name="folder_new_partial">有部分照片没能移入</string>
+</resources>

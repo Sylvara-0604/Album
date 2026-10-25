@@ -1,0 +1,46 @@
+# ---- 临时产物（打点/截图/trace 一律不入库）----
+_tmp_*
+
+# ---- Build output ----
+build/
+.gradle/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+captures/
+*.hprof
+
+# ---- Local machine config / secrets ----
+local.properties
+keystore.properties
+keystore/
+*.jks
+*.keystore
+
+# ---- IDE / OS ----
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ---- Local artifacts / handoff material (binaries) ----
+backup/
+dist/
+logs/
+*.apk
+*.aab
+
+# ---- External reference material (kept local, not source) ----
+_ref_*/
+ref-*/
+docs/refs/
+*.pftrace
+*.perfetto-trace
+*.mp4
+
+# ---- Python cache ----
+__pycache__/
+*.pyc
+
+# dsh-ops update locks (generated)
+.dsh-ops-update-*.lock

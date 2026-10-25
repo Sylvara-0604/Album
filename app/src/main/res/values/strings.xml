@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Album</string>
+
+    <string name="permission_title">Photo access needed</string>
+    <string name="permission_body">Album shows the photos and videos on this device. Nothing is uploaded.</string>
+    <string name="permission_grant">Allow access</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_select_more">Select more</string>
+
+    <string name="empty_title">No photos yet</string>
+    <string name="empty_body">Photos and videos will appear here.</string>
+    <string name="grid_load_failed">Cannot read photos on this device</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="viewer_action_crop">Crop</string>
+    <string name="viewer_action_details">Details</string>
+    <string name="capsule_folders">Folders</string>
+    <string name="capsule_settings">Settings</string>
+    <string name="capsule_exit_selection">Exit selection</string>
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_theme_section">Appearance</string>
+    <string name="settings_theme_system">Follow system</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+
+    <string name="settings_banner_section">Banner</string>
+    <string name="settings_banner_interval_row">Change every</string>
+    <string name="settings_banner_interval_default">Default (5 s / 15 s)</string>
+    <string name="settings_banner_interval_5s">5 seconds</string>
+    <string name="settings_banner_interval_10s">10 seconds</string>
+    <string name="settings_banner_interval_60s">1 minute</string>
+
+    <string name="settings_motion_section">Motion</string>
+    <string name="settings_page_switch_row">Page transition tempo</string>
+    <string name="settings_page_switch_soft">Soft handoff (240 ms, current)</string>
+    <string name="settings_page_switch_serial">Strict serial (300 ms, like 9.9)</string>
+    <string name="settings_page_switch_fast">Faster (220 ms)</string>
+    <string name="settings_viewer_close_row">Viewer close</string>
+    <string name="settings_viewer_close_wipe">Grid slides over (current)</string>
+    <string name="settings_viewer_close_slide">Viewer slides back</string>
+
+    <string name="settings_storage_section">Storage</string>
+    <string name="settings_clear_cache">Clear cache</string>
+    <string name="settings_cache_cleared">Cache cleared</string>
+
+    <string name="settings_about_section">About</string>
+    <string name="settings_about">About this app</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_body">A modern rewrite of the Sony Album experience, built with Jetpack Compose.</string>
+    <string name="about_tech_title">Tech stack</string>
+    <string name="about_tech_body">Kotlin · Jetpack Compose · Navigation 3 · Paging 3 · Coil 3 · Media3</string>
+    <string name="about_thanks_title">Thanks</string>
+    <string name="about_thanks_body">Thanks to Sony Album for the design reference, and to the AndroidX, Coil and Media3 communities.</string>
+
+    <plurals name="folder_item_count">
+        <item quantity="other">%1$d items</item>
+    </plurals>
+    <!-- 9.9 `album_root_folder_txt`：bucket_display_name 为空的存储根目录 -->
+    <string name="folder_root">Root</string>
+    <string name="viewer_video_loading">Loading…</string>
+    <string name="viewer_video_time">%1$s / %2$s</string>
+    <string name="viewer_details_size">Size</string>
+    <string name="viewer_details_taken">Taken</string>
+    <string name="viewer_details_file_size">File size</string>
+    <string name="viewer_details_path">Path</string>
+    <string name="viewer_details_date_pattern">yyyy-MM-dd HH:mm</string>
+    <string name="viewer_details_size_b">%1$s B</string>
+    <string name="viewer_details_size_kb">%1$s KB</string>
+    <string name="viewer_details_size_mb">%1$s MB</string>
+    <string name="crop_title">Crop</string>
+    <string name="crop_cancel">Cancel</string>
+    <string name="crop_save">Save</string>
+    <string name="crop_saving">Saving…</string>
+    <string name="crop_save_choice_title">Save as</string>
+    <string name="crop_save_copy">Save as copy</string>
+    <string name="crop_save_overwrite">Overwrite original</string>
+    <string name="crop_error_title">Cannot save</string>
+    <string name="crop_error_dismiss">OK</string>
+    <string name="crop_error_decode">Cannot load this image</string>
+    <string name="crop_error_denied">No permission to write</string>
+    <string name="crop_error_save">Saving failed, try again</string>
+    <string name="banner_caption_today">Today</string>
+    <plurals name="selection_count">
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <string name="selection_new_folder">New folder</string>
+    <string name="selection_share">Share</string>
+    <string name="selection_delete">Delete</string>
+    <string name="selection_delete_failed">Nothing was deleted</string>
+    <string name="action_ok">OK</string>
+    <string name="folder_new_title">New folder</string>
+    <string name="folder_new_hint">Folder name</string>
+    <string name="folder_new_failed">Could not create the folder</string>
+    <string name="folder_new_partial">Some items could not be moved</string>
+</resources>
